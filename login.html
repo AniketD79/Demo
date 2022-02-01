@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="stylee.css" type="text/css">
+    <script type="text/javascript">
+        function validate()
+        {
+          var usrn=document.getElementById("name");
+          var mname=document.getElementById("name");
+          var lname=document.getElementById("name");
+          if(usrn.value.trim()=="")
+          {
+            usrn.style.border="solid 3px red"
+            return false;
+          }
+          else{
+            usrn.style.border="solid 3px green"
+            return true;
+          }
+        }
+        </script>
+</head>
+<body>
+    <div class="main">
+    <div class="login">
+        <h2>Login</h2>
+        <form onchange="return validate();" id="Login" method="post">
+    <label>Username</label>
+    <br>
+    <input type="text" name="usrn" id="name" placeholder="Username">
+    <br><br>
+    <label for="pwd">Password</label>
+    <br>
+    <input type="password" id="name" name="pwd" minlength="8"><br><br>
+    <input type="button" value="Login" name="button" id="button">
+    <a href="Registrations.html">Click me to register</a>
+    </form>
+    </div>
+    </div>
+    
+</body>
+</html>
